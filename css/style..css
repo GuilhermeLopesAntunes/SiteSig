@@ -1,233 +1,165 @@
 /* Importando o reset.css */
-@import url('reset.css');
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --cor-principal-atletica: #000032;
+  --cor-texto: #222236;
+  --cor-secundaria-atletica: #ffc900;
+  --fonte-principal: "Open Sans", sans-serif;
+}
 
 /* Estilos gerais */
 body {
-    background-color: #f5f5f5;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  font-family: var(--fonte-principal);
+  color: white;
 }
 
+a {
+    padding-top: 10px;
+}
+.logo-uni-si {
+    width:50px;
+    gap: 10px;
+}
 /* Cabeçalho */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    height: auto;
-    color: white;
-}
-
-.header .left {
-    padding: 1rem;
-    flex: 1;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: auto;
+  background-color: var(--cor-principal-atletica);
+  color: white;
+  padding: 30px;
 }
 
 /* Navbar como row */
 .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+.links-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
 }
 
-.nav-links li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  transition: all 0.3s ease; /* Added ease timing function for smoother transition */
 }
 
-.nav-links li a:hover {
-    color: blue;
-    font-size: 1.55rem;
+a:hover {
+  transform: scale(1.1); /* Increase scale by 20% on hover */
+  color: var(
+    --cor-secundaria-atletica
+  ); /* Change color to secondary color on hover */
 }
 
-/* Vídeo */
+.container-titulo {
+  display: flex;
+  padding: 30px 400px 30px 400px;
+  text-align: center;
+}
+
+.texto-principal {
+  font-size: 36px;
+  color: var(--cor-principal-atletica);
+  font-weight: 700;
+}
+
+.container-texto-grupo1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 300px;
+}
+
+.titulo-grupo1 {
+  font-size: 25px;
+  color: var(--cor-principal-atletica);
+  font-weight: 600;
+}
+
+.texto-grupo1 {
+  font-size: 20px;
+  color: var(--cor-texto);
+  font-weight: 300;
+  line-height: 30px;
+}
+
 .video {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-wrap: wrap;
-    gap: 2rem;
+    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
-.video .left {
-    flex: 1;
-    max-width: 100%;
+.container-texto-grupo2 {
+    background-color: var(--cor-principal-atletica);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px 400px 80px 300px;
     text-align: center;
 }
 
-.video .left span {
-    font-size: 2rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 1rem;
+.titulo-grupo2 {
+    font-size: 25px;
+    color: var(--cor-secundaria-atletica);
+    font-weight: 600;
 }
 
-.video .left {
-    font-size: 1.5rem;
-    color: black;
+.texto-grupo2 {
+    line-height: 25px;
+    font-size: 20px;
+    color: #f5f5f5;
+    font-weight: 300;
 }
 
-/* Informações */
-.information {
-    padding: 20px;
+.titulo-grupo2 {
+    font-size: 25px;
+    color: var(--cor-secundaria-atletica);
+    font-weight: 600;
 }
 
-.information p {
-    font-size: 1.3rem;
-    color: rgb(50, 50, 50);
+.imagem1 {
+    padding-top: 40px;
 }
 
-.content {
-    margin: 20px;
-    margin-bottom: 4rem; /* Adiciona uma margem inferior para empurrar o conteúdo para baixo */
+img {
+    border-radius: 10px;
 }
 
-.content h2 {
-    padding: 40px 0;
-    font-weight: 100;
+strong {
+    font-weight: 700;
+    color: var(--cor-principal-atletica);
 }
 
-.paragraph h3 {
-    padding: 40px 0;
-    font-weight: 100;
+.ajuste-texto {
+    padding-top: 10px;
 }
 
-.paragraph h4 {
-    padding: 40px 0;
-    font-weight: bold;
+
+.container-texto-grupo3 {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+background-color: #ffc900;
 }
-
-.paragraph {
-    width: 80vw;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-.listcontent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 40px 0;
-}
-
-.listcontent .listright {
-    flex: 1;
-    max-width: 100%;
-    border-left: 5px solid rgb(116, 125, 255);
-    padding: 0 20px;
-}
-
-.listcontent .listleft {
-    flex: 1;
-    max-width: 100%;
-}
-
-.informations {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .nav-links li {
-        text-align: center;
-        width: 100%;
-    }
-
-    .nav-links li a {
-        font-size: 1.2rem;
-    }
-
-    .information {
-        padding: 10px;
-    }
-
-    .information p {
-        font-size: 1.1rem;
-    }
-
-    .video {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .listcontent {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 1rem;
-    }
-
-    .navbar {
-        padding: 1rem 0;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .nav-links li {
-        text-align: center;
-        width: 100%;
-    }
-
-    .nav-links li a {
-        font-size: 1rem;
-    }
-
-    .video {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .information {
-        padding: 5px;
-    }
-
-    .information p {
-        font-size: 1rem;
-    }
+.titulo-grupo3 {
+    font-size: 25px;
+    color: var(--cor--atletica);
+    font-weight: 600;
 }
