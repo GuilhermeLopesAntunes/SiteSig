@@ -11,7 +11,7 @@
   --tamanho-fonte-texto: 20px;
   --tamanho-line-height: 30px;
   --padding-gp1: 10px 20px;
-  --padding-gp2: 15px 20px;
+  --padding-gp2: 30px 20px;
   /* tendo em vista a aplicação, (leitura com qr code), 
   utilziei o "mobile first"*/
 
@@ -148,7 +148,6 @@ a:hover {
   flex-direction: column;
   gap: 10px;
   padding: var(--padding-gp2);
-  text-align: center;
 }
 
 .titulo-grupo2 {
