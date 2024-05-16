@@ -73,18 +73,24 @@ a:hover {
 
 .container-titulo {
   display: flex;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
 }
 
 .texto-principal {
   font-size: var(--tamanho-fonte-titulo);
   color: var(--cor-principal-atletica);
   font-weight: 700;
-
+  text-align: center; /* Centers the text horizontally */
 }
+
+.image {
+  border-radius: 10px;
+  padding-top: 20px;
+  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
 
 .container-texto-grupo1 {
   display: flex;
@@ -147,10 +153,6 @@ a:hover {
   font-weight: 600;
 }
 
-.image {
-  border-radius: 10px;
-  padding-top: 20px;
-}
 
 strong {
   font-weight: 500;
