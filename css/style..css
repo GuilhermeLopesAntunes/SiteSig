@@ -6,6 +6,11 @@
   --cor-texto: #222236;
   --cor-secundaria-atletica: #ffc900;
   --fonte-principal: "Open Sans", sans-serif;
+  --tamanho-fonte-titulo: 30px;
+  --tamanho-fonte-texto: 20px;
+  --tamanho-line-height: 30px;
+  --padding-gp1: 40px 150px;
+  --padding-gp2: 80px 100px 80px 100px;
 }
 
 /* Estilos gerais */
@@ -17,11 +22,11 @@ body {
 }
 
 a {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .logo-uni-si {
-    width:50px;
-    gap: 10px;
+  width: 50px;
+  gap: 10px;
 }
 /* Cabeçalho */
 header {
@@ -54,7 +59,7 @@ header {
 
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: var(--tamanho-fonte-texto);
   color: white;
   transition: all 0.3s ease; /* Added ease timing function for smoother transition */
 }
@@ -68,38 +73,46 @@ a:hover {
 
 .container-titulo {
   display: flex;
-  padding: 30px 400px 30px 400px;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 .texto-principal {
-  font-size: 36px;
+  font-size: var(--tamanho-fonte-titulo);
   color: var(--cor-principal-atletica);
   font-weight: 700;
+
 }
 
 .container-texto-grupo1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 80px 300px;
+  padding: var(--padding-gp1);
 }
 
 .titulo-grupo1 {
-  font-size: 25px;
+  font-size: var(--tamanho-fonte-titulo);
   color: var(--cor-principal-atletica);
   font-weight: 600;
 }
 
 .texto-grupo1 {
-  font-size: 20px;
+  font-size: var(--tamanho-fonte-texto);
   color: var(--cor-texto);
   font-weight: 300;
-  line-height: 30px;
+  line-height: var(--tamanho-line-height);
+}
+
+.video-preview {
+  width: 560px;
+  height: 315px;
 }
 
 .video {
-    padding-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,59 +120,65 @@ a:hover {
 }
 
 .container-texto-grupo2 {
-    background-color: var(--cor-principal-atletica);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 80px 400px 80px 300px;
-    text-align: center;
+  background-color: var(--cor-principal-atletica);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--padding-gp2);
+  text-align: center;
 }
 
 .titulo-grupo2 {
-    font-size: 25px;
-    color: var(--cor-secundaria-atletica);
-    font-weight: 600;
+  font-size: var(--tamanho-fonte-titulo);
+  color: var(--cor-secundaria-atletica);
+  font-weight: 600;
 }
 
 .texto-grupo2 {
-    line-height: 25px;
-    font-size: 20px;
-    color: #f5f5f5;
-    font-weight: 300;
+  line-height: 25px;
+  font-size: var(--tamanho-fonte-texto);
+  color: #f5f5f5;
+  font-weight: 300;
 }
 
 .titulo-grupo2 {
-    font-size: 25px;
-    color: var(--cor-secundaria-atletica);
-    font-weight: 600;
+  font-size: var(--tamanho-fonte-titulo);
+  color: var(--cor-secundaria-atletica);
+  font-weight: 600;
 }
 
-.imagem1 {
-    padding-top: 40px;
-}
-
-img {
-    border-radius: 10px;
+.image {
+  border-radius: 10px;
+  padding-top: 20px;
 }
 
 strong {
-    font-weight: 700;
-    color: var(--cor-principal-atletica);
+  font-weight: 500;
+  color: var(--cor-principal-atletica);
 }
 
 .ajuste-texto {
-    padding-top: 10px;
+  padding-top: 20px;
 }
 
-
-.container-texto-grupo3 {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-background-color: #ffc900;
+.container-texto-grupo1-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 300px;
 }
-.titulo-grupo3 {
-    font-size: 25px;
-    color: var(--cor--atletica);
-    font-weight: 600;
+
+.titulo-grupo1-2 {
+  font-size: var(--tamanho-fonte-titulo);
+  color: var(--cor-principal-atletica);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+  :root {
+    --tamanho-fonte-titulo: 25px;
+    --padding-gp1: 0px;
+    --padding-gp2: 0px;
+  }
+
 }
